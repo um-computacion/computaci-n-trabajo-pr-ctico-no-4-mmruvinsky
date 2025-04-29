@@ -12,5 +12,13 @@ class TestFactorial(unittest.TestCase):
         self.assertEqual(factorial_recursivo(4), 24)
         self.assertEqual(factorial_recursivo(5), 120)
 
+    def test_factorial_iterativo(self):
+        self.assertEqual(factorial_iterativo(0), 1)
+        self.assertEqual(factorial_iterativo(1), 1)
+        self.assertEqual(factorial_iterativo(2), 2)
+        self.assertEqual(factorial_iterativo(3), 6)
+        self.assertEqual(factorial_iterativo(4), 24)
+        self.assertEqual(factorial_iterativo(5), 120)   
+
 if __name__ == '__main__':
     unittest.main()
